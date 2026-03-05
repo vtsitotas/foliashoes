@@ -414,7 +414,7 @@ img:hover {
 .collection-card {
     background: transparent;
     padding: 15px;
-    border: 4px solid rgba(43, 29, 18, 0.1);
+    border: 1px solid rgba(43, 29, 18, 0.1);
     border-bottom: 4px solid var(--leather-dark);
     transition: var(--transition);
     box-shadow: none;
@@ -727,7 +727,7 @@ footer {
 
     /* Real Zoom out photos on mobile */
     .card-img {
-        height: 220px; /* Give it more vertical space */
+        height: 280px; 
         padding: 0; 
         display: flex;
         align-items: center;
@@ -735,8 +735,8 @@ footer {
     }
 
     .card-img img {
-        max-width: 110%; /* Force the image to be smaller (Zoom Out effect) */
-        max-height: 110%;
+        max-width: 65%; /* Properly zoomed out */
+        max-height: 65%;
         object-fit: contain;
     }
 
