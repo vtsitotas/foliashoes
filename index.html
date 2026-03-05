@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folia Shoes | Μια Φωλιά Διαχρονικών Υποδημάτων στη Θεσσαλονίκη</title>
+    <meta name="description" content="Folia Shoes: Ιστορικό κατάστημα υποδημάτων στη Θεσσαλονίκη με μοναδικά σχέδια, ποιότητα και παράδοση γενεών.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grain"></div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+302310835259" class="float-btn call-btn" title="Καλέστε μας">
+            <i class="fas fa-phone"></i>
+        </a>
+        <button id="backToTop" class="float-btn up-btn" title="Επιστροφή στην κορυφή">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Folia Shoes</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Αρχική</a></li>
+                <li><a href="#story">Η Ιστορία μας</a></li>
+                <li><a href="#collections">Συλλογές</a></li>
+                <li><a href="#why-us">Γιατί Εμάς</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="fade-in subtitle">Από το 1978</span>
+                <h1 class="fade-in delay-1">Μια Φωλιά Διαχρονικών Υποδημάτων για Γενιές.</h1>
+                <p class="fade-in delay-2">Ποιότητα, δεξιοτεχνία και κληρονομιά στην καρδιά της Θεσσαλονίκης. Ανακαλύψτε τη συλλογή μας από επιλεγμένα brands και χειροποίητα σχέδια.</p>
+                <div class="hero-btns fade-in delay-3">
+                    <a href="#collections" class="btn btn-primary">Ανακαλύψτε τη Συλλογή</a>
+                    <a href="#contact" class="btn btn-outline">Επισκεφθείτε μας</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section id="story" class="story section-padding">
+            <div class="container grid-2">
+                <div class="story-img reveal-left">
+                    <img src="photos/theplaceinside/1000004079.jpg" alt="Folia Shoes Boutique Experience">
+                    <div class="img-accent"></div>
+                </div>
+                <div class="story-content reveal-right">
+                    <h2 class="section-title">Η Ιστορία μας</h2>
+                    <p class="lead">Μια κληρονομιά ποιότητας και εμπιστοσύνης, που περνά από γενιά σε γενιά με το ίδιο αμείωτο μεράκι.</p>
+                    <p>Στην οδό Αρχαιολογικού Μουσείου 11, το Folia Shoes αποτελεί σημείο αναφοράς για τη Θεσσαλονίκη εδώ και δεκαετίες. 
+ Αυτό που ξεκίνησε ως μια μικρή μπουτίκ, εξελίχθηκε σε μια "φωλιά" ποιότητας, όπου κάθε ζευγάρι παπούτσια επιλέγεται με γνώμονα την άνεση και το διαχρονικό στυλ.</p>
+                    <p>Σήμερα, η νέα γενιά της οικογένειας συνεχίζει την κληρονομιά, συνδυάζοντας την κλασική κομψότητα με τις σύγχρονες τάσεις, διατηρώντας πάντα την προσωπική εξυπηρέτηση που μας έκανε αγαπητούς στη γειτονιά μας.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="brands-section section-padding alternate-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Επιλεγμένα Brands</h2>
+                    <p class="text-center lead">Συνεργαζόμαστε με τα κορυφαία ονόματα στο χώρο του υποδήματος.</p>
+                </div>
+                <div class="brands-carousel-wrapper">
+                    <div class="brands-carousel">
+                        <div class="brands-track" id="brandTrack">
+                            <div class="brand-item-premium">Rieker</div>
+                            <div class="brand-item-premium">Tamaris</div>
+                            <div class="brand-item-premium">Skechers</div>
+                            <div class="brand-item-premium">Piccadilly</div>
+                            <div class="brand-item-premium">Caprice</div>
+                            <div class="brand-item-premium">Ragazza</div>
+                            <div class="brand-item-premium">S.Oliver</div>
+                            <div class="brand-item-premium">Marco Tozzi</div>
+                            <div class="brand-item-premium">Jana</div>
+                            <div class="brand-item-premium">Remonte</div>
+                            <div class="brand-item-premium">Geox</div>
+                            <div class="brand-item-premium">Clarks</div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="brand-item-premium" aria-hidden="true">Rieker</div>
+                            <div class="brand-item-premium" aria-hidden="true">Tamaris</div>
+                            <div class="brand-item-premium" aria-hidden="true">Skechers</div>
+                            <div class="brand-item-premium" aria-hidden="true">Piccadilly</div>
+                            <div class="brand-item-premium" aria-hidden="true">Caprice</div>
+                            <div class="brand-item-premium" aria-hidden="true">Ragazza</div>
+                            <div class="brand-item-premium" aria-hidden="true">S.Oliver</div>
+                            <div class="brand-item-premium" aria-hidden="true">Marco Tozzi</div>
+                            <div class="brand-item-premium" aria-hidden="true">Jana</div>
+                            <div class="brand-item-premium" aria-hidden="true">Remonte</div>
+                            <div class="brand-item-premium" aria-hidden="true">Geox</div>
+                            <div class="brand-item-premium" aria-hidden="true">Clarks</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections -->
+        <section id="collections" class="collections section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Οι Συλλογές μας</h2>
+                    <p class="text-center">Ποιότητα και στυλ για κάθε περίσταση.</p>
+                </div>
+                <div class="collection-grid">
+                    <div class="collection-card reveal-up">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&q=80&w=800" alt="Γυναικεία Leather Boots">
+                        </div>
+                        <div class="card-info">
+                            <h3>Γυναικεία</h3>
+                            <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank" class="card-link">Δείτε περισσότερα</a>
+                        </div>
+                    </div>
+                    <div class="collection-card reveal-up delay-1">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&q=80&w=800" alt="Ανδρικά Leather Shoes">
+                        </div>
+                        <div class="card-info">
+                            <h3>Ανδρικά</h3>
+                            <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank" class="card-link">Δείτε περισσότερα</a>
+                        </div>
+                    </div>
+                    <div class="collection-card reveal-up delay-2">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&q=80&w=800" alt="Ανατομικά & Comfort Sneakers">
+                        </div>
+                        <div class="card-info">
+                            <h3>Ανατομικά & Comfort</h3>
+                            <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank" class="card-link">Δείτε περισσότερα</a>
+                        </div>
+                    </div>
+                    <div class="collection-card reveal-up delay-3">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800" alt="Bags & Accessories">
+                        </div>
+                        <div class="card-info">
+                            <h3>Τσάντες & Αξεσουάρ</h3>
+                            <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank" class="card-link">Δείτε περισσότερα</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding alternate-bg">
+            <div class="container-full">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Ανακαλύψτε το Χώρο μας</h2>
+                    <p class="text-center">Μια ζεστή γωνιά στην καρδιά της Θεσσαλονίκης. <br> <small>(Σύρετε για περισσότερα)</small></p>
+                </div>
+                <div class="gallery-scroll-container">
+                    <div class="gallery-item"><img src="photos/outside/1000004076.jpg" alt="Store Front"></div>
+                    <div class="gallery-item"><img src="photos/theplaceinside/1000004077.jpg" alt="Store Interior 1"></div>
+                    <div class="gallery-item"><img src="photos/theplaceinside/1000004078.jpg" alt="Store Interior 2"></div>
+                    <div class="gallery-item"><img src="photos/outside/1000004082.jpg" alt="Window Display"></div>
+                    <div class="gallery-item"><img src="photos/outside/1000004083.jpg" alt="Store Side"></div>
+                    <div class="gallery-item"><img src="photos/theplaceinside/1000004080.jpg" alt="Store Interior 3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="offers-section section-padding">
+            <div class="container text-center">
+                <div class="offer-badge">Seasonal Sale</div>
+                <h2 class="section-title">Ποιότητα στις Καλύτερες Τιμές</h2>
+                <p class="lead text-center">Επισκεφθείτε μας και ανακαλύψτε επιλεγμένα κομμάτια με εκπτώσεις έως και 50%.</p>
+                <a href="#contact" class="btn btn-primary">Πού θα μας βρείτε</a>
+            </div>
+        </section>
+
+        <!-- Why Folia -->
+        <section id="why-us" class="why-us section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Γιατί Folia Shoes</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item reveal-up">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Ποιοτικά Υλικά</h3>
+                        <p>Επιλέγουμε μόνο δέρματα και υλικά κορυφαίας ποιότητας που αντέχουν στο χρόνο.</p>
+                    </div>
+                    <div class="feature-item reveal-up delay-1">
+                        <i class="fa-solid fa-medal"></i>
+                        <h3>Curated Brands</h3>
+                        <p>Μοναδικές μάρκες που δεν θα βρείτε πουθενά αλλού, με έμφαση στο design.</p>
+                    </div>
+                    <div class="feature-item reveal-up delay-2">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>Προσωπική Εξυπηρέτηση</h3>
+                        <p>Σας βοηθάμε να βρείτε το ιδανικό ζευγάρι που ταιριάζει στο δικό σας στυλ και ανάγκες.</p>
+                    </div>
+                    <div class="feature-item reveal-up delay-3">
+                        <i class="fa-solid fa-tag"></i>
+                        <h3>Δίκαιες Τιμές</h3>
+                        <p>Ποιότητα που αξίζει, σε τιμές που σέβονται τον πελάτη μας.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews section-padding alternate-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Η Αγάπη των Πελατών μας</h2>
+                    <div class="rating-summary">
+                        <span class="rating-num">4.6</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="reviews-count">Βασισμένο σε 49 κριτικές Google</span>
+                    </div>
+                </div>
+                
+                <div class="reviews-masonry">
+                    <!-- Review 1 -->
+                    <div class="review-card reveal-up">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>Ελένη Χ.</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Στο ίδιο μέρος, κρατάει πολλά χρόνια αυτή η 'φωλιά' των παπουτσιών και εύχομαι να συνεχισει και για πολλά πολλά ακόμη...🧿 Ξαναπήγα μετά από 5 χρόνια περίπου, σήμερα και βρήκα τη 'νέα' γενιά..."</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card reveal-up delay-1">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>Grigoriadi Olympia</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Ευγενέστατη η κοπέλα,μεγάλη ποικιλία σε ποιοτικά υποδήματα και πολύ καλές τιμές!!! Συνεχίστε έτσι!"</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card reveal-up delay-2">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>anna papadimitriou</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Πόσο το αγαπώ αυτό το κατάστημα. Πάντα κάνουν τις καλύτερες τιμές κ έχουν μόνο ποιοτικά παπούτσια. Έχει κάποια χρόνια που φύγαμε από εκείνη τη γειτονιά αλλά ακόμα πάμε να ψωνίσουμε απο τη φωλιά!"</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card reveal-up delay-3">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>DESPINA MELEKIDOU</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Πολύ καλά ποιοτικά παπούτσια. Δερμάτινα, ανατομικά, πολύ μεγάλη γκάμα. Καλές τιμές. Αξιόλογες εκπτώσεις. Δεν είναι τυχαίο που το κατάστημα υπάρχει όλα αυτά τα χρόνια στην γειτονιά."</p>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="review-card reveal-up">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>Μαρία Καμά</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Το πρώτο μαγαζί που επισκέπτομαι όταν ψάχνω παπούτσια. Μεγάλη ποικιλία ποιοτικών εταιριών στις χαμηλότερες τιμές της Θεσσαλονίκης. Δεν τους ενδιαφέρει απλά να πουλήσουν αλλά να εξυπηρετήσουν."</p>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="review-card reveal-up delay-1">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4>Elina Kapetanaki</h4>
+                                <span class="badge">Τοπικός οδηγός</span>
+                            </div>
+                            <div class="card-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="quote">"Εξαιρετικό μαγαζί, πολύ καλές τιμές, εξαιρετική εξυπηρέτηση και τα παπούτσια είναι πάντα ανατομικά ποιότητας. Είμαι χρόνια πελάτισσα και ο συνδυασμός ποιότητας τιμής σίγουρα δεν συγκρίνεται."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Us -->
+        <section id="contact" class="visit-us section-padding">
+            <div class="container grid-2">
+                <div class="contact-info reveal-left">
+                    <h2 class="section-title">Επισκεφθείτε μας</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Αρχαιολογικού Μουσείου 11, Θεσσαλονίκη 546 40, Ελλάδα</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+30 231 083 5259</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Αγορές στο κατάστημα • Παραλαβή από το κατάστημα • Διανομή</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/foliashoesskg/?hl=el" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="map-container reveal-right">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.6422728851!2d22.952118277232017!3d40.61571564350259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839d675136315%3A0xf2c140158323d3bf!2sFolia%20shoes!5e0!3m2!1sel!2sgr!4v1772529357526!5m2!1sel!2sgr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <div class="footer-logo">Folia Shoes</div>
+            <p class="footer-tagline">Ποιότητα & Παράδοση στη Θεσσαλονίκη</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/foliashoesskg/?hl=el" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/folia.shoes/?locale=el_GR" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Folia Shoes. All Rights Reserved. <br> Created with elegance for Thessaloniki.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
