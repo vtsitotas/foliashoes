@@ -418,15 +418,24 @@ img:hover {
 }
 
 .card-img {
-    height: 400px;
+    height: 350px; /* Slightly reduced height */
     overflow: hidden;
     margin-bottom: 20px;
+    background-color: var(--parchment-light); /* Subtle background for the 'contain' fit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Breathing room for the shoe */
 }
 
 .card-img img {
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Shows the whole image without cropping */
     border: none;
+    transition: var(--transition);
 }
 
 .card-info h3 {
